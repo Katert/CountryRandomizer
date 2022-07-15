@@ -9,13 +9,15 @@
     margin: 0 2rem;
     width: 700px;
     height: 80%;
-    border: 2px solid black;
     border-radius: 20px;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(42, 53, 62);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    -webkit-box-shadow: 0px 0px 26px 1px rgb(184, 184, 184);
+    -moz-box-shadow: 0px 0px 26px 1px rgb(184, 184, 184);
+    box-shadow: 0px 0px 26px 1px rgb(184, 184, 184);
   }
 }
