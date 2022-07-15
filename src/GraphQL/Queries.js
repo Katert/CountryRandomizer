@@ -8,7 +8,7 @@ export const GET_COUNTRY_CODES = gql`
   }
 `;
 
-export const GET_COUNTRY_NAME_AND_EMOJI = gql`
+export const GET_COUNTRY = gql`
   query Country($code: ID!) {
     country(code: $code) {
       name

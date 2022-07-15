@@ -11,7 +11,7 @@ import RandomizeButton from "../RandomizeButton/RandomizeButton";
 import { CountryCode } from "../../interfaces";
 
 // Query imports
-import { GET_COUNTRY_NAME_AND_EMOJI } from "../../GraphQL/Queries.js";
+import { GET_COUNTRY } from "../../GraphQL/Queries.js";
 
 // Interface imports
 import { Country } from "../../interfaces";
@@ -46,12 +46,9 @@ const MainContainer: React.FunctionComponent<Props> = (props) => {
   }, [countryCodes]);
 
   // Retrieve country with country code
-  const { error, loading, data, refetch } = useQuery(
-    GET_COUNTRY_NAME_AND_EMOJI,
-    {
-      variables: { code },
-    }
-  );
+  const { error, loading, data, refetch } = useQuery(GET_COUNTRY, {
+    variables: { code },
+  });
 
   // Set country state using query result
   useEffect(() => {
